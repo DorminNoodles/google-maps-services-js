@@ -142,6 +142,7 @@ export class Client {
   private experienceId: string[];
 
   constructor({ axiosInstance, config, experienceId }: ClientOptions = {}) {
+    console.log("TES #############################################################################################");
     if (axiosInstance && config) {
       throw new Error("Provide one of axiosInstance or config.");
     }
@@ -211,7 +212,7 @@ export class Client {
    *
    * ```javascript
    * import { Client } from '@googlemaps/google-maps-services-js';
-   * 
+   *
    * const args = {
    *   params: {
    *     key: '<your-api-key>',
